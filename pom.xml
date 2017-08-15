@@ -110,7 +110,6 @@
     <bigquery.version>v2-rev295-1.22.0</bigquery.version>
     <bigtable.version>0.9.7.1</bigtable.version>
     <cloudresourcemanager.version>v1-rev6-1.22.0</cloudresourcemanager.version>
-    <pubsubgrpc.version>0.1.0</pubsubgrpc.version>
     <clouddebugger.version>v2-rev8-1.22.0</clouddebugger.version>
     <dataflow.version>v1b3-rev196-1.22.0</dataflow.version>
     <dataflow.proto.version>0.5.160222</dataflow.proto.version>
@@ -126,7 +125,7 @@
     <google-cloud-dataflow-java-proto-library-all.version>0.5.160304</google-cloud-dataflow-java-proto-library-all.version>
     <guava.version>20.0</guava.version>
     <grpc.version>1.2.0</grpc.version>
-    <grpc-google-common-protos.version>0.1.9</grpc-google-common-protos.version>
+    <grpc-google-common-protos.version>0.1.15</grpc-google-common-protos.version>
     <!--
       This is the version of Hadoop used to compile the module that depend on Hadoop.
       This dependency is defined with a provided scope.
@@ -838,8 +837,8 @@
 
       <dependency>
         <groupId>com.google.api.grpc</groupId>
-        <artifactId>grpc-google-pubsub-v1</artifactId>
-        <version>${pubsubgrpc.version}</version>
+        <artifactId>grpc-google-cloud-pubsub-v1</artifactId>
+        <version>${grpc-google-common-protos.version}</version>
         <exclusions>
           <!-- Exclude an old version of guava that is being pulled in by a transitive
             dependency of google-api-client -->
